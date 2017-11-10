@@ -116,7 +116,7 @@ javascript: (function () {
         var A = C[L];
         if (v(A)) {
             var str = A.src;
-            if (E(A) && str.endsWith('headshot.jpg')) {
+            if (E(A) && typeof str != 'undefined' && str.endsWith('headshot.jpg')) {
                 k = A;
                 break
             }
