@@ -115,7 +115,8 @@ javascript: (function () {
     for (var L = 0; L < C.length; L++) {
         var A = C[L];
         if (v(A)) {
-            if (E(A)) {
+            var str = A.src;
+            if (E(A) && str.endsWith('headshot.jpg')) {
                 k = A;
                 break
             }
